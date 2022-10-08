@@ -59,6 +59,12 @@ a:visited {
   margin: 0;
 }
 
+.nav-bar-fixed {
+  position: fixed;
+  z-index: 1;
+  width: 1280px;
+}
+
 .underline-line-homepage {
   border-bottom: 4px solid #db7a4e;
   width: 70px;

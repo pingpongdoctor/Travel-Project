@@ -59,3 +59,9 @@ a:visited {
   padding: 0;
   margin: 0;
 }
+
+.nav-bar-fixed {
+  position: fixed;
+  z-index: 1;
+  width: 1280px;
+}
