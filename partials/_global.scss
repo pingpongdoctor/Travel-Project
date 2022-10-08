@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+// Navigation bar
+.site-header-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.site-header-flexbox__box {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header-flexbox__box:first-child {
+  color: #335576;
+}
+
+.site-header-flexbox__box:nth-child(2) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
