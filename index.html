@@ -6,21 +6,58 @@
     <title>Homepage</title>
   </head>
   <body>
+    <!-- Navigation bar -->
     <div class="container">
-      <!-- Navigation bar -->
-      <div class="nav-bar-fixed">
-        <header class="site-header-flexbox">
-          <h2 class="site-header-flexbox__box">Travel Site</h2>
-          <ul class="site-header-flexbox__box">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Hawaii</a></li>
-            <li><a href="#">Iceland</a></li>
-            <li><a href="#">Greece</a></li>
-          </ul>
-          <div class="underline-line-homepage"></div>
-        </header>
-      </div>
-      <section></section>
+      <header class="site-header-flexbox">
+        <h2 class="site-header-flexbox__box">Travel Site</h2>
+
+        <ul class="site-header-flexbox__box">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Hawaii</a></li>
+          <li><a href="#">Iceland</a></li>
+          <li><a href="#">Greece</a></li>
+        </ul>
+
+        <div class="underline-line-homepage"></div>
+      </header>
+
+      <section class="hero-flexbox hero">
+        <div class="hero-flexbox__box hero__detail">
+          <h1>Travelling Come With Endless Discoveries</h1>
+          <p>
+            Don't make your dreams just dreams. Experience the world by booking
+            a vacation with us now.
+          </p>
+          <a href="#"><button class="hero__btn">Get started</button></a>
+        </div>
+
+        <img
+          class="hero-flexbox__box hero__img"
+          src="./assets/hero.png"
+          alt="hero-picture"
+        />
+      </section>
+
+      <main class="site-recommendation">
+        <h2>Recommendation</h2>
+
+        <section class="card-flexbox">
+          <div class="card">
+            <img class="card__img" src="./assets/hawaii.jpg" alt="Hawaii" />
+            <h3 class="card__name">Hawaii</h3>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="./assets/iceland.jpg" alt="Iceland" />
+            <h3 class="card__name">Iceland</h3>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="./assets/greece.jpg" alt="Greece" />
+            <h3 class="card__name">Greece</h3>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

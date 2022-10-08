@@ -4,7 +4,57 @@
 .underline-line-homepage {
   border-bottom: 4px solid #db7a4e;
   width: 70px;
-  right: 311px;
-  top: 80px;
+  right: 367px;
+  top: 55px;
   position: absolute;
 }
+
+// Hero
+
+.hero {
+  padding: 7rem 3rem 3rem 3rem;
+  background-color: #fefaf5;
+  color: #335576;
+}
+
+.hero-flexbox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero__detail {
+  margin-top: 3rem;
+  width: 49%;
+}
+
+.hero__img {
+  width: 37%;
+}
+
+.hero__btn {
+  background-color: #db7a4e;
+  width: 13vw;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem;
+  color: white;
+}
+
+// Cards
+
+.card__img {
+  width: 250px;
+}
+
+.card-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.site-recommendation {
+  padding: 4rem;
+}
+
+//Footer

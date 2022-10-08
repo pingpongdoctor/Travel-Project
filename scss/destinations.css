@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: verdana;
   line-height: 1.5;
-  margin: 0;
 }
 
 .container {
@@ -14,19 +15,23 @@ body {
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-h2 {
-  font-size: 2rem;
+h2,
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 p {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 a:link,
@@ -41,7 +46,9 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
+  width: 1280px;
+  padding: 0.5rem 6rem;
 }
 
 .site-header-flexbox__box {
@@ -51,6 +58,7 @@ a:visited {
 
 .site-header-flexbox__box:first-child {
   color: #335576;
+  margin: 0;
 }
 
 .site-header-flexbox__box:nth-child(2) {
@@ -59,32 +67,26 @@ a:visited {
   margin: 0;
 }
 
-.nav-bar-fixed {
-  position: fixed;
-  z-index: 1;
-  width: 1280px;
-}
-
 .underline-line-greece {
   border-bottom: 4px solid #db7a4e;
-  width: 80px;
-  right: 0px;
-  top: 80px;
+  width: 70px;
+  right: 96px;
+  top: 60px;
   position: absolute;
 }
 
 .underline-line-hawaii {
   border-bottom: 4px solid #db7a4e;
-  width: 75px;
-  right: 214px;
-  top: 80px;
+  width: 70px;
+  right: 282px;
+  top: 60px;
   position: absolute;
 }
 
 .underline-line-iceland {
   border-bottom: 4px solid #db7a4e;
-  width: 85px;
-  right: 105px;
-  top: 80px;
+  width: 70px;
+  right: 192px;
+  top: 60px;
   position: absolute;
 }/*# sourceMappingURL=destinations.css.map */
