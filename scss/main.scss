@@ -1,12 +1,8 @@
 @use "../partials/global" as *;
 
-// Navigation bar
-.underline-line-homepage {
+.home {
   border-bottom: 4px solid #db7a4e;
-  width: 70px;
-  right: 367px;
-  top: 55px;
-  position: absolute;
+  padding-bottom: 5px;
 }
 
 // Hero
@@ -69,49 +65,3 @@
   transform: translate(120px, -50px);
   display: inline-block;
 }
-
-//Footer
-
-.site-footer {
-  padding: 4rem 14rem;
-  background-color: #fefaf5;
-  color: #335576;
-}
-
-.site-footer__subtitle {
-  color: #db7a4e;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-
-.site-footer-flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-footer-flexbox__box:last-child {
-  flex-basis: 150px;
-}
-
-.site-footer__timetable-flexbox {
-  display: flex;
-  gap: 2rem;
-}
-
-.site-footer__social-media img {
-  width: 15%;
-  margin-right: 2rem;
-}
-
-.site-footer__social-media img:last-child {
-  margin: 0;
-}
-
-// .site-footer__social-media h2 {
-//   display: inline-block;
-// }
-
-// .site-footer__timetable-box {
-//   flex-basis: ;
-// }

@@ -49,6 +49,7 @@ a:visited {
   position: fixed;
   width: 1280px;
   padding: 0.5rem 6rem;
+  z-index: 1;
 }
 
 .site-header-flexbox__box {
@@ -67,26 +68,122 @@ a:visited {
   margin: 0;
 }
 
-.underline-line-greece {
-  border-bottom: 4px solid #db7a4e;
-  width: 70px;
-  right: 96px;
-  top: 60px;
-  position: absolute;
+.site-footer {
+  padding: 2rem 14rem;
+  background-color: #fefaf5;
+  color: #335576;
 }
 
-.underline-line-hawaii {
-  border-bottom: 4px solid #db7a4e;
-  width: 70px;
-  right: 282px;
-  top: 60px;
-  position: absolute;
+.site-footer__subtitle {
+  color: #db7a4e;
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
 
-.underline-line-iceland {
+.site-footer-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.site-footer-flexbox__box:last-child {
+  flex-basis: 150px;
+}
+
+.site-footer-flexbox__box:last-child h2 {
+  margin-bottom: 3rem;
+}
+
+.site-footer__timetable-flexbox {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.site-footer__social-media img {
+  width: 12%;
+  margin-right: 1.5rem;
+}
+
+.greece {
   border-bottom: 4px solid #db7a4e;
-  width: 70px;
-  right: 192px;
-  top: 60px;
+  padding-bottom: 5px;
+}
+
+.iceland {
+  border-bottom: 4px solid #db7a4e;
+  padding-bottom: 5px;
+}
+
+.hawaii {
+  border-bottom: 4px solid #db7a4e;
+  padding-bottom: 5px;
+}
+
+.site-destination {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  padding-top: 60px;
+  position: relative;
+}
+
+.site-destination--greece-background {
+  background-image: url(../assets/greece.jpg);
+}
+
+.site-destination--iceland-background {
+  background-image: url(../assets/iceland.jpg);
+}
+
+.site-destination--hawaii-background {
+  background-image: url(../assets/hawaii.jpg);
+}
+
+.site-destination__title {
+  font-size: 4rem;
   position: absolute;
+  color: white;
+  top: 6rem;
+  left: 6rem;
+}
+
+.itinerary-cards-flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 14rem;
+}
+
+.itinerary-cards-flexbox__box {
+  flex-basis: 29%;
+  border-radius: 5px;
+}
+
+.card {
+  align-items: center;
+  height: 45vh;
+  background-color: white;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.card__activity {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card__activity li {
+  background-color: #fefaf5;
+  width: 80%;
+  padding: 0.5rem 0;
+  margin: 1.3rem auto;
+  font-size: 1rem;
+}
+
+.card__day {
+  font-weight: bold;
+  background-color: white;
+  border-bottom: 3px solid black;
+  width: 80%;
+  margin: 1rem auto 2rem auto;
+  line-height: 1;
 }/*# sourceMappingURL=destinations.css.map */
