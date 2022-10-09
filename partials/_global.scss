@@ -85,6 +85,10 @@ a:visited {
     list-style: none;
     padding: 0;
     margin: 0;
+    a:hover {
+      text-decoration: 3px underline red;
+      border-bottom: none;
+    }
   }
 }
 

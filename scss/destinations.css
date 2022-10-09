@@ -68,6 +68,11 @@ a:visited {
   padding: 0;
   margin: 0;
 }
+.site-header__menu-link a:hover {
+  -webkit-text-decoration: 3px underline red;
+          text-decoration: 3px underline red;
+  border-bottom: none;
+}
 
 .site-footer {
   padding: 1rem 14rem;
