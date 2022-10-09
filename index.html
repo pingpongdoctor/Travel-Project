@@ -8,11 +8,17 @@
   <body>
     <!-- Navigation bar -->
     <div class="container">
-      <header class="site-header-flexbox">
-        <h2 class="site-header-flexbox__box">Travel Site</h2>
+      <header
+        class="site-header site-header--background-color site-header-flexbox"
+      >
+        <a href="./index.html"
+          ><h2 class="site-header__logo site-header-flexbox__box">
+            Travel Site
+          </h2></a
+        >
 
-        <ul class="site-header-flexbox__box">
-          <li><a class="home" href="#">Home</a></li>
+        <ul class="site-header__menu-link site-header-flexbox__box">
+          <li><a class="site-header__home-link" href="#">Home</a></li>
           <li><a href="#">Hawaii</a></li>
           <li><a href="#">Iceland</a></li>
           <li><a href="#">Greece</a></li>
@@ -21,14 +27,20 @@
         <!-- <div class="underline-line-homepage"></div> -->
       </header>
 
-      <section class="hero-flexbox hero">
+      <section class="hero hero-flexbox hero-background--color">
         <div class="hero-flexbox__box hero__detail">
           <h1>Travelling Come With Endless Discoveries</h1>
           <p>
             Don't make your dreams just dreams. Experience the world by booking
             a vacation with us now.
           </p>
-          <a href="#"><button class="hero__btn">Get started</button></a>
+          <a href="#"
+            ><button
+              class="hero__btn hero__btn--color hero__btn--border-radius"
+            >
+              Get started
+            </button></a
+          >
         </div>
 
         <img
@@ -38,22 +50,38 @@
         />
       </section>
 
+      <!-- Site-Recommendation -->
       <main class="site-recommendation">
-        <h2>Recommendation</h2>
+        <h2 class="site-recommendation__title">Recommendation</h2>
 
-        <section class="card-flexbox">
+        <section class="site-recommendation__card-flexbox">
           <div class="card">
-            <img class="card__img" src="./assets/hawaii.jpg" alt="Hawaii" />
+            <a href="./pages/hawaii.html"
+              ><img
+                class="card__img card__img--border-radius"
+                src="./assets/hawaii.jpg"
+                alt="Hawaii"
+            /></a>
             <h3 class="card__name">Hawaii</h3>
           </div>
 
           <div class="card">
-            <img class="card__img" src="./assets/iceland.jpg" alt="Iceland" />
+            <a href="./pages/iceland.html"
+              ><img
+                class="card__img card__img--border-radius"
+                src="./assets/iceland.jpg"
+                alt="Iceland"
+            /></a>
             <h3 class="card__name">Iceland</h3>
           </div>
 
           <div class="card">
-            <img class="card__img" src="./assets/greece.jpg" alt="Greece" />
+            <a href="./pages/greece.html">
+              <img
+                class="card__img card__img--border-radius"
+                src="./assets/greece.jpg"
+                alt="Greece"
+            /></a>
             <h3 class="card__name">Greece</h3>
           </div>
         </section>
@@ -61,7 +89,9 @@
 
       <!-- Footer -->
 
-      <footer class="site-footer-flexbox site-footer">
+      <footer
+        class="site-footer-flexbox site-footer site-footer--background-color"
+      >
         <div class="site-footer-flexbox__box">
           <h2>Contact</h2>
           <p class="site-footer__subtitle">email</p>

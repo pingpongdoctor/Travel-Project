@@ -1,6 +1,7 @@
 @use "../partials/global" as *;
 
-.home {
+// Navigation bar
+.site-header__home-link {
   border-bottom: 4px solid #db7a4e;
   padding-bottom: 5px;
 }
@@ -9,65 +10,77 @@
 
 .hero {
   padding: 7rem 3rem 3rem 3rem;
-  background-color: #fefaf5;
   color: #335576;
+
+  &-background--color {
+    background-color: #fefaf5;
+  }
+
+  &-flexbox {
+    @include flexbox(flex, stretch, space-around);
+  }
+
+  &__detail {
+    margin-top: 3rem;
+    width: 51%;
+  }
+
+  &__img {
+    width: 36.5%;
+    @include make-img-responsive;
+  }
+
+  &__btn {
+    width: 13vw;
+    border: none;
+    padding: 1rem;
+    color: #ffffff;
+  }
+
+  &__btn--border-radius {
+    border-radius: 30px;
+  }
+
+  &__btn--color {
+    background-color: #db7a4e;
+  }
 }
 
-.hero-flexbox {
-  display: flex;
-  justify-content: space-around;
-}
-
-.hero__detail {
-  margin-top: 3rem;
-  width: 51%;
-}
-
-.hero__img {
-  width: 36.5%;
-  height: 50vh;
-}
-
-.hero__btn {
-  background-color: #db7a4e;
-  width: 13vw;
-  border-radius: 30px;
-  border: none;
-  padding: 1rem;
-  color: white;
-}
-
-// Cards
+//  Site-Recommendation
 
 .site-recommendation {
   padding: 4rem 6rem;
+
+  &__title {
+    color: #335576;
+  }
+  &__card-flexbox {
+    @include flexbox(flex, center, center);
+    gap: 2rem;
+  }
 }
 
 .card {
   flex-basis: 23%;
-  height: auto;
   position: relative;
-}
 
-.card__img {
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  height: 50vh;
-}
+  &__img {
+    width: 100%;
+    @include make-img-responsive;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
 
-.card-flexbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
+  &__img--border-radius {
+    border-radius: 5px;
+  }
 
-.card__name {
-  color: white;
-  position: absolute;
-  top: 85%;
-  right: 5%;
-  margin: 0;
+  &__name {
+    color: #ffffff;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    margin: 0;
+  }
 }

@@ -1,41 +1,9 @@
 @use "../partials/global" as *;
 
 // Navigation bar
-// .underline-line-greece {
-//   border-bottom: 4px solid #db7a4e;
-//   width: 70px;
-//   right: 96px;
-//   top: 60px;
-//   position: absolute;
-// }
-
-// .underline-line-hawaii {
-//   border-bottom: 4px solid #db7a4e;
-//   width: 70px;
-//   right: 282px;
-//   top: 60px;
-//   position: absolute;
-// }
-
-// .underline-line-iceland {
-//   border-bottom: 4px solid #db7a4e;
-//   width: 70px;
-//   right: 192px;
-//   top: 60px;
-//   position: absolute;
-// }
-
-.greece {
-  border-bottom: 4px solid #db7a4e;
-  padding-bottom: 5px;
-}
-
-.iceland {
-  border-bottom: 4px solid #db7a4e;
-  padding-bottom: 5px;
-}
-
-.hawaii {
+.site-header__greece-link,
+.site-header__iceland-link,
+.site-header__hawaii-link {
   border-bottom: 4px solid #db7a4e;
   padding-bottom: 5px;
 }
@@ -47,70 +15,72 @@
   background-position: center;
   padding-top: 60px;
   position: relative;
-}
+  height: 90vh;
 
-.site-destination--greece-background {
-  background-image: url(../assets/greece.jpg);
-}
+  &--greece-background {
+    background-image: url(../assets/greece.jpg);
+  }
 
-.site-destination--iceland-background {
-  background-image: url(../assets/iceland.jpg);
-}
+  &--iceland-background {
+    background-image: url(../assets/iceland.jpg);
+  }
 
-.site-destination--hawaii-background {
-  background-image: url(../assets/hawaii.jpg);
-}
+  &--hawaii-background {
+    background-image: url(../assets/hawaii.jpg);
+  }
 
-.site-destination__title {
-  font-size: 4rem;
-  position: absolute;
-  color: #ffff;
-  top: 6rem;
-  left: 6rem;
-}
+  &__title {
+    font-size: 4rem;
+    color: #ffffff;
+    top: 6rem;
+    left: 6rem;
+  }
 
-.itinerary-cards {
-  padding: 6rem 14rem;
-}
+  &__title--absolute-positioning {
+    position: absolute;
+  }
 
-.itinerary-cards-flexbox {
-  display: flex;
-  justify-content: space-between;
-}
+  &__itinerary-cards {
+    padding: 6rem 14rem;
+  }
 
-.itinerary-cards-flexbox__box {
-  flex-basis: 29%;
-  border-radius: 5px;
+  &__itinerary-cards-flexbox {
+    @include flexbox(flex, stretch, space-between);
+  }
+
+  &__itinerary-cards-box {
+    flex-basis: 29%;
+    border-radius: 5px;
+  }
 }
 
 .card {
-  align-items: center;
-  height: 45vh;
-  background-color: #ffff;
   text-align: center;
-  margin-top: 5.5rem;
-}
+  margin-top: 5rem;
+  padding-bottom: 2.5rem;
 
-.card__activity {
-  list-style: none;
-  padding-left: 0;
-}
+  &--background-color {
+    background-color: #ffffff;
+  }
 
-.card__activity li {
-  background-color: #fefaf5;
-  width: 80%;
-  padding: 0.5rem 0;
-  // height: 5vh;
-  margin: 1.3rem auto;
-  font-size: 1rem;
-  // margin-bottom: 1rem;
-}
+  &__activity {
+    list-style: none;
+    padding-left: 0;
+    li {
+      background-color: #fefaf5;
+      width: 80%;
+      padding: 0.5rem 0;
+      margin: 1.3rem auto;
+      font-size: 1rem;
+    }
+  }
 
-.card__day {
-  font-weight: bold;
-  background-color: white;
-  border-bottom: 3px solid black;
-  width: 80%;
-  margin: 1rem auto 2rem auto;
-  line-height: 1;
+  &__day {
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: 3px solid black;
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+    line-height: 1;
+  }
 }

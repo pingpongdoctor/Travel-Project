@@ -9,13 +9,19 @@
     <div class="container">
       <!-- Navigation bar -->
 
-      <header class="site-header-flexbox">
-        <h2 class="site-header-flexbox__box">Travel Site</h2>
-        <ul class="site-header-flexbox__box">
+      <header
+        class="site-header site-header--background-color site-header-flexbox"
+      >
+        <a href="../index.html"
+          ><h2 class="site-header__logo site-header-flexbox__box">
+            Travel Site
+          </h2></a
+        >
+        <ul class="site-header__menu-link site-header-flexbox__box">
           <li><a href="#">Home</a></li>
           <li><a href="#">Hawaii</a></li>
           <li>
-            <a class="iceland" href="#">Iceland</a>
+            <a class="site-header__iceland-link" href="#">Iceland</a>
           </li>
           <li><a href="#">Greece</a></li>
         </ul>
@@ -23,9 +29,17 @@
 
       <!-- Destination -->
       <main class="site-destination site-destination--iceland-background">
-        <h1 class="site-destination__title">Iceland</h1>
-        <section class="itinerary-cards itinerary-cards-flexbox">
-          <div class="card itinerary-cards-flexbox__box">
+        <h1
+          class="site-destination__title site-destination__title--absolute-positioning"
+        >
+          Iceland
+        </h1>
+        <section
+          class="site-destination__itinerary-cards site-destination__itinerary-cards-flexbox"
+        >
+          <div
+            class="card card--background-color site-destination__itinerary-cards-box"
+          >
             <p class="card__day">Friday</p>
             <ul class="card__activity">
               <li>Breakfast</li>
@@ -34,7 +48,9 @@
               <li>Dancing</li>
             </ul>
           </div>
-          <div class="card itinerary-cards-flexbox__box">
+          <div
+            class="card card--background-color site-destination__itinerary-cards-box"
+          >
             <p class="card__day">Saturday</p>
 
             <ul class="card__activity">
@@ -44,7 +60,9 @@
               <li>Dancing</li>
             </ul>
           </div>
-          <div class="card itinerary-cards-flexbox__box">
+          <div
+            class="card card--background-color site-destination__itinerary-cards-box"
+          >
             <p class="card__day">Sunday</p>
             <ul class="card__activity">
               <li>Breakfast</li>
@@ -57,7 +75,9 @@
       </main>
 
       <!-- Footer -->
-      <footer class="site-footer-flexbox site-footer">
+      <footer
+        class="site-footer-flexbox site-footer site-footer--background-color"
+      >
         <div class="site-footer-flexbox__box">
           <h2>Contact</h2>
           <p class="site-footer__subtitle">email</p>

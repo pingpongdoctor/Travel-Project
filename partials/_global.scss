@@ -1,3 +1,14 @@
+@mixin make-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin flexbox($display, $align-items, $justify-content) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,68 +53,77 @@ a:visited {
 }
 
 // Navigation bar
-.site-header-flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  position: fixed;
+
+.site-header {
   width: 88.89vw;
   padding: 0.5rem 6rem;
-  z-index: 1;
-}
 
-.site-header-flexbox__box {
-  display: flex;
-  gap: 1.25rem;
-}
+  &--background-color {
+    background-color: #ffffff;
+  }
 
-.site-header-flexbox__box:first-child {
-  color: #335576;
-  margin: 0;
-}
+  &-flexbox {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    @include flexbox(flex, center, space-between);
+    position: fixed;
+    z-index: 1;
+  }
 
-.site-header-flexbox__box:nth-child(2) {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  &-flexbox__box {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  &__logo {
+    color: #335576;
+    margin: 0;
+  }
+
+  &__menu-link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 //Footer
 
 .site-footer {
-  padding: 2rem 14rem;
-  background-color: #fefaf5;
+  padding: 1rem 14rem;
   color: #335576;
   height: 30vh;
-}
 
-.site-footer__subtitle {
-  color: #db7a4e;
-  text-transform: uppercase;
-  font-size: 0.5rem;
-}
+  &--background-color {
+    background-color: #fefaf5;
+  }
 
-.site-footer-flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  &__subtitle {
+    color: #db7a4e;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+  }
 
-.site-footer-flexbox__box:last-child {
-  flex-basis: 18.1%;
-}
+  &-flexbox {
+    @include flexbox(flex, flex-start, space-between);
+  }
 
-.site-footer-flexbox__box:last-child h2 {
-  margin-bottom: 3rem;
-}
+  &-flexbox__box:last-child {
+    flex-basis: 18.1%;
+  }
 
-.site-footer__timetable-flexbox {
-  display: flex;
-  gap: 0.8rem;
-}
+  &-flexbox__box:last-child h2 {
+    margin-bottom: 3rem;
+  }
 
-.site-footer__social-media img {
-  width: 12%;
-  margin-right: 1.5rem;
+  &__timetable-flexbox {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__social-media img {
+    width: 12%;
+    margin-right: 1.5rem;
+  }
 }
