@@ -20,11 +20,12 @@
 
 .hero__detail {
   margin-top: 3rem;
-  width: 49%;
+  width: 51%;
 }
 
 .hero__img {
-  width: 37%;
+  width: 36.5%;
+  height: 50vh;
 }
 
 .hero__btn {
@@ -43,14 +44,17 @@
 }
 
 .card {
-  flex-basis: 250px;
+  flex-basis: 23%;
+  height: auto;
+  position: relative;
 }
 
 .card__img {
-  width: 250px;
+  width: 100%;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  height: 50vh;
 }
 
 .card-flexbox {
@@ -62,6 +66,8 @@
 
 .card__name {
   color: white;
-  transform: translate(120px, -50px);
-  display: inline-block;
+  position: absolute;
+  top: 85%;
+  right: 5%;
+  margin: 0;
 }

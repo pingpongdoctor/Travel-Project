@@ -45,7 +45,6 @@
 .site-destination {
   background-size: cover;
   background-position: center;
-  height: 90vh;
   padding-top: 60px;
   position: relative;
 }
@@ -70,10 +69,13 @@
   left: 6rem;
 }
 
+.itinerary-cards {
+  padding: 6rem 14rem;
+}
+
 .itinerary-cards-flexbox {
   display: flex;
   justify-content: space-between;
-  padding: 6rem 14rem;
 }
 
 .itinerary-cards-flexbox__box {
@@ -98,6 +100,7 @@
   background-color: #fefaf5;
   width: 80%;
   padding: 0.5rem 0;
+  // height: 5vh;
   margin: 1.3rem auto;
   font-size: 1rem;
   // margin-bottom: 1rem;

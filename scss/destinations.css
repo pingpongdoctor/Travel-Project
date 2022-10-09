@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 88.89vw;
   margin: 0 auto;
 }
 
@@ -47,14 +47,14 @@ a:visited {
   align-items: center;
   background-color: #ffffff;
   position: fixed;
-  width: 1280px;
+  width: 88.89vw;
   padding: 0.5rem 6rem;
   z-index: 1;
 }
 
 .site-header-flexbox__box {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .site-header-flexbox__box:first-child {
@@ -72,12 +72,13 @@ a:visited {
   padding: 2rem 14rem;
   background-color: #fefaf5;
   color: #335576;
+  height: 30vh;
 }
 
 .site-footer__subtitle {
   color: #db7a4e;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 .site-footer-flexbox {
@@ -87,7 +88,7 @@ a:visited {
 }
 
 .site-footer-flexbox__box:last-child {
-  flex-basis: 150px;
+  flex-basis: 18.1%;
 }
 
 .site-footer-flexbox__box:last-child h2 {
@@ -122,7 +123,6 @@ a:visited {
 .site-destination {
   background-size: cover;
   background-position: center;
-  height: 90vh;
   padding-top: 60px;
   position: relative;
 }
@@ -147,10 +147,13 @@ a:visited {
   left: 6rem;
 }
 
+.itinerary-cards {
+  padding: 6rem 14rem;
+}
+
 .itinerary-cards-flexbox {
   display: flex;
   justify-content: space-between;
-  padding: 6rem 14rem;
 }
 
 .itinerary-cards-flexbox__box {
